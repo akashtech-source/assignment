@@ -1,3 +1,5 @@
+// https://github.com/akashtech-source/assignment
+
 
 // Kilometer to Meter Checking Program
 
@@ -5,8 +7,7 @@ function kilometerToMeter(kilometer){
     var result = kilometer * 1000;
     return result;
 }
-var kilometerCheck = kilometerToMeter(6);
-console.log(kilometerCheck);
+
 
 
 // Total Budget of 3 Gadget
@@ -19,10 +20,9 @@ var result = watchPrice + phonePrice + laptopPrice;
 return result;
 
 }
-var totalPrice = budgetCalculator(7, 2, 2);
-console.log(totalPrice);
 
-// hotelCost
+
+// hotelCost program
 
 function hotelCost(day){
 var cost = 0;
@@ -45,21 +45,19 @@ else{
 }
 return cost;
 }
-var total = hotelCost(28);
-console.log(total);
+
 
 // Finding Largest string from an array
 
-var friendName = ['NazmulVaaaaaaaaai','Farhan','ronissssss'];
-  
-  var max = 0;
-  var longest;
-  
-  for (var i = 0; i < friendName.length; i++) {
-    if (friendName[i].length > max) {
-      var max = friendName[i].length;
-      longest = friendName[i];
+function megaFriend(friendsName) {
+    
+    var array = friendsName.split(" ");
+    var maximumLength = array[0].length;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].length > maximumLength){
+            maximumLength = array[i].length;
+            var longest = array[i];
+        } 
     }
-  }
-  
-  console.log(longest);
+    return longest;
+}
